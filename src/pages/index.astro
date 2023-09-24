@@ -1,0 +1,51 @@
+---
+
+import { Image } from 'astro:assets';
+import localBlobImage from '../assets/blob.svg';
+import ListResources from '../components/ListResources.astro';
+import Layout from '../layouts/Layout.astro';
+// import ListResources from '../components/ListResources.astro';
+---
+
+<Layout titlePage="Resources420">
+  <section>
+    <div class="container-web-info">
+      <h2 class="web-info-title">The best resources of web</h2>
+      <p class="web-info-description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque magnam
+        laboriosam perspiciatis molestias culpa aliquam nesciunt quisquam
+        voluptas deserunt, obcaecati illum, facilis nihil ipsum, excepturi
+        laudantium quibusdam? Maxime, eos odio.
+      </p>
+    </div>
+    <Image src={localBlobImage} alt="Texto descriptivo" width={250} />
+  </section>
+  <ListResources />
+</Layout>
+
+<style>
+  section {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .web-info-title {
+    margin-bottom: 15px;
+  }
+  .web-info-description {
+    max-width: 70ch;
+  }
+  @media screen and (max-width: 650px) {
+    section {
+      height: auto;
+      text-align: center;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .container-resources {
+      height: auto;
+    }
+  }
+</style>

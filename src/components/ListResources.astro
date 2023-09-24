@@ -1,0 +1,120 @@
+---
+import data from '../data/allResources.json';
+import { Image } from 'astro:assets';
+---
+
+<div class="container-resources">
+  <div class="container-resurce-info">
+    <h3 class="container-resource-title">Resources</h3>
+    <p class="container-resource-description">
+      En esta parte encontraras algunos recursos, estamos trabajando en
+      secciones para que cada recurso este agrupado con su categoria
+    </p>
+  </div>
+  <div class="container-list-resources">
+    {
+      data.map((resource) => (
+        <div class="resource-card">
+          <div class="resource-card-container">
+            <strong>{resource.title}</strong>
+            <Image
+              src={resource.imageUrl}
+              alt={resource.title}
+              width={32}
+              height={32}
+            />
+          </div>
+          <p class="container-resource-description">{`${resource.description.slice(
+            0,
+            60
+          )}...`}</p>
+          <div class="container">
+            <a href={resource.webSite} target="_blank">Probar</a>
+            <span class="tag">Free</span>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  /* resources */
+  .container-resources {
+    margin: 35px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .container-resurce-info {
+    text-align: center;
+    margin: 35px 0;
+  }
+  .resource-card-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .resource-card > .container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .container-resource-title {
+    margin-bottom: 15px;
+  }
+  .container-resource-description {
+    margin: 0 auto;
+    max-width: 70ch;
+    font-size: 14px;
+  }
+  .container-list-resources {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  .resource-card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 35px;
+    width: 320px;
+    height: auto;
+    background-color: #eee;
+    border-radius: 8px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container > a {
+    font-weight: bold;
+    font-size: 14px;
+    transition: color .2s ease;
+
+  }
+  .container > a:hover, .container > a:active{
+    color: #000;
+  }
+  .tag{
+    padding: 5px 15px;
+    background-color: #f74defba;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 860px){
+    .container-list-resources{
+      justify-content: center;
+    }
+  }
+</style>

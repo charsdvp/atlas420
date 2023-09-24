@@ -1,0 +1,44 @@
+<header class="header">
+  <!-- * se seguira modificando mientras haya mas paginas -->
+  <nav class="header-nav">
+    <a href="/" class="header-nav-title">Resources420</a>
+    <a href="/about">About</a>
+  </nav>
+</header>
+
+<style>
+  .header{
+    width: 100%;
+    heigth: 80px;
+  }
+  .header-nav{
+    margin: 0 auto;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-nav-title{
+    font-size: 24px;
+  }
+  /* cambiar a clases  */
+  a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #261C36;
+    transition: color .3s ease;
+  }
+  a:hover{
+    filter: drop-shadow(0px 0px 10px #DB82A3);
+    color: #DB82A3;
+  }
+</style>
+
+<!-- <script>
+  const logo = document.querySelector('.header-nav-title')
+  const body = document.body
+  logo?.addEventListener('click', e => {
+    body.classList.add('dark')
+  })
+</script> -->

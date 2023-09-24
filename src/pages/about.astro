@@ -1,0 +1,70 @@
+---
+import { Image } from 'astro:assets';
+import localBlobImage from '../assets/blob.svg';
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout titlePage="About">
+  <section>
+    <div class="container-image-header">
+      <Image src={localBlobImage} alt="Texto descriptivo" width={120} />
+    <h1>Nunca te compares con otros, por que cada background es diferente, comparate con la persona que fuiste hace 3 meses.</h1>
+    </div>
+    <div class="container-info">
+      <!-- <Image src="https://images.unsplash.com/photo-1552875101-979d61f26eb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Texto descriptivo" width={120} height={120} class="img-master"/> -->
+      <div class="container-image"></div>
+      <h2>Carlos Sánchez</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt est quaerat ratione laboriosam nesciunt dolores officiis ex sint voluptates vero nam, molestiae ipsa inventore et unde itaque amet magni!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt est quaerat ratione laboriosam nesciunt dolores officiis ex sint voluptates vero nam, molestiae ipsa inventore et unde itaque amet magni!</p>
+    </div>
+  </section>
+</Layout>
+<style>
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .container-image-header{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1, h2{
+    text-wrap: balance;
+    margin: 15px 0;
+  }
+  .square{
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  p{
+    margin: 0 auto;
+   width: 80%;
+  }
+  .container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    background-color: rgb(227, 235, 235);
+    text-align: left;
+  }
+  .container-info > p{
+    font-size: 14px
+  }
+  .container-image{
+    background-image: url('https://images.unsplash.com/photo-1552875101-979d61f26eb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+   background-position: center; 
+   background-size: cover;   
+  }
+</style>
