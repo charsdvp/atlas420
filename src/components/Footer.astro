@@ -1,24 +1,61 @@
-<footer>
-  <ul>
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">Instagram</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Github</a></li>
-  </ul>
+<footer class="footer">
+  <div class="container-footer">
+    <small>&COPY; Error420 && Carlos Sánchez</small>
+    <ul class="footer-list">
+      <li class="list-item">
+        <a href="https://www.facebook.com/profile.php?id=100087881793975" target="_blank" class="item-link">Facebook</a>
+      </li>
+      <li class="list-item">
+        <a href="https://www.instagram.com/_error_cuatro20_/" target="_blank" class="item-link">Instagram</a>
+      </li>
+      <li class="list-item">
+        <a href="https://twitter.com/charsdvp" target="_blank" class="item-link">Twitter</a>
+      </li>
+      <li class="list-item">
+        <a href="https://github.com/charsdvp" target="_blank" class="item-link">Github</a>
+      </li>
+    </ul>
+  </div>
 </footer>
 <style>
-  footer{
-    margin: 35px 0 0 0;
-    height: 100px
+  .footer{
+    padding: 35px 0;
+    height: 100px;
   }
-  footer > ul{
-    height: inherit;
+  .container-footer{
+    margin: 0 auto;
+    width: 80%;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-list{
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px
+    gap: 35px;
   }
-  a{
+  .item-link{
+    font-size: 14px;
     color: #000;
+    transition: color .3s ease;
+  }
+  .item-link:hover, .item-link:active{
+    filter: drop-shadow(0px 0px 10px #DB82A3);
+    color: #DB82A3;
+  }
+  @media screen and (max-width: 680px) {
+    .footer{
+      height: auto;
+    }
+    .container-footer{
+      gap: 15px;
+      flex-direction: column-reverse;
+    }
+    .footer-list{
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
 </style>

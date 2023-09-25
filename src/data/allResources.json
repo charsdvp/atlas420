@@ -16,5 +16,41 @@
     "imageUrl": "https://unsplash.com/favicon-32x32.png",
     "description": "Beautiful free images and photos that you can download and use in any project. Better than any stock or royalty-free photo.",
     "webSite": "https://www.happyhues.co/"
+  },
+  {
+    "title": "svghub",
+    "imageUrl": "https://svghub.vercel.app/favicon-32x32.png",
+    "description": "SVG Hub | Custom-color elements ready to paste into your project.",
+    "webSite": "https://svghub.vercel.app/"
+  },
+  {
+    "title": "JSON Data AI",
+    "imageUrl": "https://www.jsondataai.com/favicon.ico",
+    "description": "Get JSON data about anything depending on your prompt.",
+    "webSite": "https://www.jsondataai.com/"
+  },
+  {
+    "title": "Tabler Icons",
+    "imageUrl": "https://tabler-icons.io/favicon.ico",
+    "description": "4694 free and open source SVG icons designed with attention to detail to make your design stand out. Highly customizable. No attribution required. For commercial use.",
+    "webSite": "https://tabler-icons.io/"
+  },
+  {
+    "title": "Squoosh",
+    "imageUrl": "https://squoosh.app/c/favicon-c9cf50ef.ico",
+    "description": "Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser.",
+    "webSite": "https://squoosh.app/"
+  },
+  {
+    "title": "Color Designer",
+    "imageUrl": "https://colordesigner.io/favicons/favicon-32x32.png",
+    "description": "The main purpose of this tool is to help with building a color palette and generate tints and shades based on it. Just pick a color, and the app does the rest. You can use the preselected colors or the color picker for more control.",
+    "webSite": "https://colordesigner.io/"
+  },
+  {
+    "title": "Type Scale",
+    "imageUrl": "https://typescale.com/wp-content/themes/typescale/favicon/favicon.ico?ver=1.0.0",
+    "description": "Preview and choose the right type scale for your project. Experiment with font size, scale and different webfonts.",
+    "webSite": "https://typescale.com/"
   }
 ]
