@@ -15,7 +15,14 @@ import Layout from '../layouts/Layout.astro';
       <h2>Carlos Sánchez</h2>
       <p>Como desarrollador, tengo esta peculiar costumbre de crear mis propias herramientas: mi alarma personalizada, mi aplicación de seguimiento del clima, etc. Durante el proceso de desarrollo de un proyecto reciente, me di cuenta de que a menudo olvidaba guardar recursos que encontraba en la web o que mi lista de favoritos se había vuelto interminable.
       </p>
-      <p>Para solucionar este problema, decidí crear un nuevo mini proyecto: una sitio web donde puedo almacenar y gestionar todas estas herramientas y recursos útiles que me han ayudado en mis proyectos. La gran noticia es que esta plataforma también está disponible para otros desarrolladores, lo que significa que puede ser de utilidad para tu trabajo también. ¡Espero que encuentres esta herramienta útil! 👽</p>
+      <p>Para solucionar este problema, decidí crear un nuevo mini proyecto: un sitio web donde puedo almacenar y gestionar todas estas herramientas y recursos útiles que me han ayudado en mis proyectos. La gran noticia es que esta web también está disponible para otros desarrolladores, lo que significa que puede ser de utilidad para tu trabajo también. ¡Espero que encuentres esta herramienta útil! 👽</p>
+      <small class="title-tech">Tecnologías</small>
+      <div class="container-tech">
+        <Image src="https://astro.build/favicon.svg" alt="Texto descriptivo" width={24} height={24}/>
+        <Image src="https://www.svgrepo.com/show/373705/js-official.svg" alt="Texto descriptivo" width={24} height={24}/>
+        <Image src="https://svgl.vercel.app/library/css.svg" alt="Texto descriptivo" width={24} height={24}/>
+        <Image src="https://svgl.vercel.app/library/html5.svg" alt="Texto descriptivo" width={24} height={24}/>
+      </div>
     </div>
   </section>
 </Layout>
@@ -67,5 +74,20 @@ import Layout from '../layouts/Layout.astro';
     border-radius: 50%;
     background-position: center;
     background-size: cover;
+  }
+  .container-tech{
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-tech{
+    margin: 15px 0;
+  }
+  @media screen and (max-width: 420px){
+    .container-info{
+      text-wrap: balance;
+    }
   }
 </style>
