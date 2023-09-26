@@ -1,21 +1,16 @@
 ---
-
 import { Image } from 'astro:assets';
 import localBlobImage from '../assets/blob.svg';
 import ListResources from '../components/ListResources.astro';
 import Layout from '../layouts/Layout.astro';
-// import ListResources from '../components/ListResources.astro';
 ---
 
-<Layout titlePage="Resources420">
+<Layout titlePage="Atlas 420">
   <section>
     <div class="container-web-info">
-      <h2 class="web-info-title">The best resources of web</h2>
+      <h2 class="web-info-title"> ¿Quieres conocer las herramientas y recursos más efectivos en el desarrollo web?</h2>
       <p class="web-info-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque magnam
-        laboriosam perspiciatis molestias culpa aliquam nesciunt quisquam
-        voluptas deserunt, obcaecati illum, facilis nihil ipsum, excepturi
-        laudantium quibusdam? Maxime, eos odio.
+        Este sitio web se dedica a proporcionar una cuidadosa selección de herramientas que son esenciales para cualquier desarrollador en busca de un camino más eficiente hacia el éxito en sus proyectos
       </p>
     </div>
     <Image src={localBlobImage} alt="Texto descriptivo" width={250} />
@@ -33,6 +28,7 @@ import Layout from '../layouts/Layout.astro';
   }
   .web-info-title {
     margin-bottom: 15px;
+    max-width: 40ch;
   }
   .web-info-description {
     max-width: 70ch;

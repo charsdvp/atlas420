@@ -1,17 +1,19 @@
 <header class="header">
   <!-- * se seguira modificando mientras haya mas paginas -->
   <nav class="header-nav">
-    <a href="/" class="header-nav-title">Resources420</a>
-    <a href="/about">About</a>
+    <a href="/" class="header-nav-title header-nav-link">
+      <span class="pink">&#60;</span> Atlas420 <span class="pink">&#47;&#62;</span>
+    </a>
+    <a href="/about" class="header-nav-link">About</a>
   </nav>
 </header>
 
 <style>
-  .header{
+  .header {
     width: 100%;
     heigth: 80px;
   }
-  .header-nav{
+  .header-nav {
     margin: 0 auto;
     width: 80%;
     height: 80px;
@@ -19,18 +21,21 @@
     align-items: center;
     justify-content: space-between;
   }
-  .header-nav-title{
+  .header-nav-title {
     font-size: 24px;
   }
-  /* cambiar a clases  */
-  a{
+  .pink {
+    color: #db82a3;
+    filter: drop-shadow(0px 0px 10px #db82a3);
+  }
+  .header-nav-link{
     font-weight: bold;
     text-decoration: none;
-    color: #261C36;
-    transition: color .3s ease;
+    color: #261c36;
+    transition: all 0.3s ease;
   }
-  a:hover{
-    filter: drop-shadow(0px 0px 10px #DB82A3);
-    color: #DB82A3;
+  .header-nav-link:hover {
+    filter: drop-shadow(0px 0px 10px #db82a3);
+    color: #db82a3;
   }
 </style>
