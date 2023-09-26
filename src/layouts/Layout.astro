@@ -2,6 +2,7 @@
 import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import MetaTags from '../components/MetaTags.astro';
 import '../css/global.css'
 
 interface Props {
@@ -14,10 +15,7 @@ const { titlePage } = Astro.props
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="shortcut icon" href="/alien.png" type="image/x-icon">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+		<MetaTags />
 		<title>{titlePage}</title>
 		<ViewTransitions />
 	</head>
